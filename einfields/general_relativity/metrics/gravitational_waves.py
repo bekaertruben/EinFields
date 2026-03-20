@@ -25,7 +25,7 @@ import numpy as np
 import jax 
 import jax.numpy as jnp
 
-from general_relativity.metrics.minkowski import minkowski_metric
+from einfields.general_relativity.metrics.minkowski import minkowski_metric
 
 def gravitational_waves_metric_distortion(
     cart_coords: jax.Array, 

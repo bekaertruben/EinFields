@@ -32,7 +32,7 @@ dependencies = [
 ]
 
 [project.scripts]
-einfields-train = "einstein_fields.main:main"
+einfields-train = "einfields.einstein_fields.main:main"
 
 [tool.setuptools]
 include-package-data = true
@@ -40,12 +40,7 @@ include-package-data = true
 [tool.setuptools.packages.find]
 where = ["."]
 include = [
-    "bh_render*",
-    "data_generation*",
-    "differential_geometry*",
-    "einstein_fields*",
-    "finite_difference*",
-    "general_relativity*"
+    "einfields*"
 ]
 exclude = [
     "example_notebooks*",
@@ -53,8 +48,7 @@ exclude = [
 ]
 
 [tool.setuptools.package-data]
-data_generation = ["configs/*.yml"]
-einstein_fields = ["configs/*.yml", "configs/utils_config/*.yml"]
-bh_render = ["background_img/*"]
-"differential_geometry.levi_civita_symbol" = ["symbol_saves/*.npy"]
-
+"einfields.data_generation" = ["configs/*.yml"]
+"einfields.einstein_fields" = ["configs/*.yml", "configs/utils_config/*.yml"]
+"einfields.bh_render" = ["background_img/*"]
+"einfields.differential_geometry.levi_civita_symbol" = ["symbol_saves/*.npy"]

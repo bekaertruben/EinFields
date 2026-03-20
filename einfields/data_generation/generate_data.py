@@ -31,7 +31,7 @@ import yaml
 jax.config.update('jax_enable_x64', True)
 jax.config.update("jax_default_matmul_precision", "highest")
 
-from data_generation.utils_generate_data import (validate_config, 
+from einfields.data_generation.utils_generate_data import (validate_config, 
                                                  create_coords_and_vol_el, 
                                                  loop_over_tensor_storing, 
                                                  return_metric_fn, 
@@ -73,7 +73,7 @@ if __name__ == '__main__':
         yaml.dump(config, f, sort_keys=False)
 
     # Example how to use transform_list
-    # from data_generation.utils_generate_data import scaled_func
+    # from einfields.data_generation.utils_generate_data import scaled_func
     # transform_list = [scaled_func(1.0, 2.0, 3.0, 4.0), 
     #                   scaled_func(10.2, 1.5, 9.23, 4.3)]
     # You can have as many transform as you want, but the number of arguments needs to match

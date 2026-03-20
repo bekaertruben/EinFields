@@ -33,10 +33,10 @@ from typing import Callable, Union, Optional, Tuple, Literal, Sequence
 from ml_collections import ConfigDict
 
 
-from einstein_fields.utils.utils_symmetry import take_symmetric_metric, take_symmetric_jacobian, take_symmetric_hessian
-from differential_geometry import vdiffgeo, diffgeo
-from data_generation.data_lookup_tables import metric_dict, coord_transform_dict
-from einstein_fields.utils.config_training import valid_dir, valid_file
+from einfields.einstein_fields.utils.utils_symmetry import take_symmetric_metric, take_symmetric_jacobian, take_symmetric_hessian
+from einfields.differential_geometry import vdiffgeo, diffgeo
+from einfields.data_generation.data_lookup_tables import metric_dict, coord_transform_dict
+from einfields.einstein_fields.utils.config_training import valid_dir, valid_file
 
 def get_kwargs_for_func(args : list[str], args_dict_values : Union[dict, ConfigDict]) -> dict:
     values_list = [args_dict_values.get(arg) for arg in args]

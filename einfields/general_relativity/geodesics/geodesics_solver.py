@@ -21,7 +21,7 @@
 # SOFTWARE.
 """
 
-from differential_geometry import diffgeo
+from einfields.differential_geometry import diffgeo
 import diffrax
 from diffrax import ODETerm, diffeqsolve
 import jax

@@ -2,9 +2,9 @@ import jax
 import jax.numpy as jnp
 import numpy as np
 from typing import Callable, Tuple
-from general_relativity.geodesics import solver
-from general_relativity.geodesics.utils_geodesics import create_solver_params
-from differential_geometry import diffgeo
+from einfields.general_relativity.geodesics import solver
+from einfields.general_relativity.geodesics.utils_geodesics import create_solver_params
+from einfields.differential_geometry import diffgeo
 from scipy.interpolate import interp1d
 from PIL import Image
 import time

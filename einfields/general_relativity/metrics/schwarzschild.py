@@ -24,7 +24,7 @@
 import numpy as np
 import jax 
 import jax.numpy as jnp 
-from general_relativity.metrics.minkowski import minkowski_metric_eddington_finkelstein_non_rotating
+from einfields.general_relativity.metrics.minkowski import minkowski_metric_eddington_finkelstein_non_rotating
 
 def schwarzschild_metric_spherical(
     coords: jax.Array, 

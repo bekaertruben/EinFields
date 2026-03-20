@@ -30,11 +30,11 @@ import jax.numpy as jnp
 from typing import Tuple, Callable
 
 import diffrax
-from differential_geometry import diffgeo
-from general_relativity.geodesics.geodesics_solver import solver
+from einfields.differential_geometry import diffgeo
+from einfields.general_relativity.geodesics.geodesics_solver import solver
 
-from general_relativity.metrics.kerr import kerr_metric_boyer_lindquist
-from general_relativity.coordinate_transformations.coord_transform import oblate_spheroid_to_cartesian
+from einfields.general_relativity.metrics.kerr import kerr_metric_boyer_lindquist
+from einfields.general_relativity.coordinate_transformations.coord_transform import oblate_spheroid_to_cartesian
 
 import matplotlib.pyplot as plt
 from matplotlib.collections import LineCollection

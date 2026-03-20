@@ -2,11 +2,11 @@
 import matplotlib.pyplot as plt 
 import jax.numpy as jnp
 import numpy as np
-from bh_render.utils import (generate_phi_samples, 
+from einfields.bh_render.utils import (generate_phi_samples, 
                              generate_rendering_schwarzschild, 
                              ray_trace_init_cond,
                              create_initial_condition_equatorial_observer)
-from general_relativity import schwarzschild_metric_spherical
+from einfields.general_relativity import schwarzschild_metric_spherical
 
 if __name__ == "__main__":
     phi_samples = generate_phi_samples(sparse_samples=512)

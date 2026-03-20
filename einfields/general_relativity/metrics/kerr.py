@@ -25,8 +25,8 @@ import numpy as np
 import jax 
 import jax.numpy as jnp 
 
-from general_relativity.coordinate_transformations.coord_transform import cartesian_to_oblate_spheroid
-from general_relativity.metrics.minkowski import (minkowski_metric, minkowski_metric_oblate_spheroidal, minkowski_metric_eddington_finkelstein_rotating)
+from einfields.general_relativity.coordinate_transformations.coord_transform import cartesian_to_oblate_spheroid
+from einfields.general_relativity.metrics.minkowski import (minkowski_metric, minkowski_metric_oblate_spheroidal, minkowski_metric_eddington_finkelstein_rotating)
 
 def kerr_metric_boyer_lindquist(
     coords: jax.Array,

@@ -20,7 +20,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 """
 
-from general_relativity import (
+from einfields.general_relativity import (
     minkowski_metric,
     minkowski_metric_spherical,
     minkowski_metric_eddington_finkelstein_non_rotating,
@@ -28,7 +28,7 @@ from general_relativity import (
     minkowski_metric_eddington_finkelstein_rotating,
 )
 
-from general_relativity import (
+from einfields.general_relativity import (
     schwarzschild_metric_spherical,
     schwarzschild_metric_spherical_distortion,
     schwarzschild_metric_kerr_schild,
@@ -37,7 +37,7 @@ from general_relativity import (
     schwarzschild_metric_eddington_finkelstein_distortion,
 )
 
-from general_relativity import (
+from einfields.general_relativity import (
     kerr_metric_boyer_lindquist,
     kerr_metric_boyer_lindquist_distortion,
     kerr_schild_cartesian_metric,
@@ -46,12 +46,12 @@ from general_relativity import (
     kerr_metric_eddington_finkelstein_distortion,
 )
 
-from general_relativity import (
+from einfields.general_relativity import (
     gravitational_waves_metric,
     gravitational_waves_metric_distortion,
 )
 
-from general_relativity import (
+from einfields.general_relativity import (
     cartesian_to_spherical,
     cartesian_to_oblate_spheroid,
     spherical_to_kerr_schild_cartesian,

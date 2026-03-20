@@ -27,8 +27,8 @@ os.environ['XLA_PYTHON_CLIENT_MEM_FRACTION'] = '.75'
 from ml_collections import ConfigDict, FrozenConfigDict
 import argparse
 import orbax.checkpoint as ocp
-from einstein_fields.nn_models import list_activations, get_extra_model_cfg, model_key_dict
-from einstein_fields.utils import (
+from einfields.einstein_fields.nn_models import list_activations, get_extra_model_cfg, model_key_dict
+from einfields.einstein_fields.utils import (
     get_optimizer_args,
     get_scheduler_args,
     optimizer_dict_args,
@@ -37,11 +37,11 @@ from einstein_fields.utils import (
     store_config,
     load_config
 )
-from einstein_fields.utils.config_training import (
+from einfields.einstein_fields.utils.config_training import (
     valid_file,
     valid_dir
 )
-from einstein_fields.train import train
+from einfields.einstein_fields.train import train
 import jax
 import yaml
 import wandb
