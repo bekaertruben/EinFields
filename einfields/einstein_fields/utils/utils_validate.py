@@ -4,9 +4,9 @@ import optax
 from .mini_batch import MiniBatchTensorDatasetDict
 from .utils_norm import minkowski_norm_sq, divergence_papuc_operator_canonical
 from einfields.differential_geometry import diffgeo, vdiffgeo
-from einfields.data_generation.utils_generate_data import return_metric_fn
 
 def validate(config, model, params, data, data_config, key) -> dict:
+    from einfields.data_generation.utils_generate_data import return_metric_fn
 
     validation_dict = {}
 
